@@ -1,0 +1,53 @@
+lesson 1 reflections
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    it helped highlight subtle differences between two files.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    having the history of the file will show the changes that were made to the
+	file, giving context to the types of errors that may have occurred as a 
+	result of them changing over time
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    manually committing helps to save working versions of projects, rather than
+	versions that are still works in progress. for example a feature could still
+	be in development when the automatic commit occurs. however, automatic commits
+	are still beneficial, as they occur frequently and consistently, allowing for 
+	tracking of changes over time, giving more context to errors that occur throughout
+	that period of time where that feature was being developed.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Different systems, Git typically hosts files that are highly interconnected
+	like HTML/CSS files, while Google Docs typically hosts text documents. Changing
+	a file in Google Docs is more likely to be local to that file, while making changes
+	to a file in Git is more likely to affect multiple files. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    diff provides a way to view differences between two files, while log brings up
+	the history of changes seen in a particular file. using the two together allows
+	users to see the differences between particular versions of the same file, 
+	viewing the changes over time.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    version control allows users to revert any changes back to how they were previously,
+	giving confidence to users to test out concepts to see if they work in that 
+	particular implementation or not. if it does, then the user can move onto fine tuning
+	the concept, or otherwise, users can go back to the drawing board to think of a new
+	implementation of that concept. allows you to explore major changes to the code base
+	without fear of having to go back and fix a broken project.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    efficiently comparing code for changes/errors, exploring new code design implementations
+	without fear of breaking the project entirely.
