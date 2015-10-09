@@ -1,18 +1,44 @@
 What happens when you initialize a repository? Why do you need to do it?
+	initialising a repository creates a .git hidden folder so that changes
+	to the files within that folder can be tracked. there are no commits made
+	though, and the initial commit must be made manually.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+	the staging area is an intermediary between the working directory and the 
+	repository. it allows users to group up files that belong in a logical unit
+	and then commit those files altogether. this allows for coherence between
+	commits, as only files that make sense to be placed together are placed
+	in the staging area.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	the staging area provides a step in which you can essentially 'gather your thoughts'
+	with regards to what you have been working on. this area helps to group together 
+	changes to the project that fit together. the changes are then further emphasised
+	by the commit message.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	branches help to manage any experimental features that may have come up during a 
+	brain storming activity, or any features that have not yet been set in stone. it
+	also helps when you have multiple versions of a game, for example when doing
+	localisation or testing out specific features. also useful for collaborations, 
+	either with yourself, or with other individuals.
 
 How do the diagrams help you visualize the branch structure?
+	diagrams help to visualise the often chaotic branch structure, and how reachable 
+	each commit is.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	merging two branches together creates a new commit, with the currently checked 
+	out branch the tip of the new commit. it also makes the two branches reachable,
+	as the parents of the new commit (which essentially joins the two branches) are 
+	the tips of each branch.
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	automatic merging provides an easy mechanism to merge branches that are highly dissimilar,
+	while the option to manually merge provides the fine tuned changes that may be required
+	if branches are highly similar.
