@@ -4,4 +4,22 @@ When would you want to use a remote repository rather than keeping all your work
 Why might you want to always pull changes manually rather than having Git automatically 
 stay up-to-date with your remote repository?
   sometimes an update will break the existing code that you have worked on, although the
-  implementation works on the master branch of the GitHub repository. 
+  implementation works on the master branch of the GitHub repository. changes cause conflicts.
+  manually pulling allows for the resolution of any new features before resolving these 
+  conflicts.
+
+Describe the differences between forks, clones, and branches. When would you use one instead  
+of another?
+  the term fork is specific to GitHub. It is cloning a repository, done by GitHub, so the 
+  files are cloned to GitHub's servers and stored there. A clone is a more generic term,
+  specific to Git. It refers to copying a repository, including all the history behind the
+  files. This can be performed on a local repository or a remote repository. A branch is a
+  series of interlinked commits, going backwards in time. Each commit points to the parent
+  before it, until the last one, which is the first initial commit, has no parent. Typically,
+  there is one master branch, which contains the production level project, and several 
+  off shoots from the master branch, where experimental code and iterations can occur.
+What is the benefit of having a copy of the last known state of the remote stored locally?
+  the state of the remote provides information about all the changes that have occurred, up
+  to that point in time. having it stored locally provides easy offline access to those changes. it also helps to show the differences made to files locally, and the changes
+  made to files remotely. this provides more information about how files should be merged
+  when it comes to pushing changes made locally to the servers on GitHub.
