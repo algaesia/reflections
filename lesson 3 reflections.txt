@@ -33,9 +33,24 @@ be harder?
   change across. if there are conflicts, then they are dealt with manually for each team
   member. 
   
+When would you want to make changes in a separate branch rather than directly in master?
+What benefits does each approach have?
+  experimental features or features that are still works in progress should be placed in a 
+  separate branch. this allows the master branch of production level code, that does not
+  break, stay working as intended. 
+  
 working dir one change ahead on local (committed, but not pushed), one change ahead on
 remote. use fetch to retrieve updates from remote. working dir updated to remote. merge
 changes between local and remote - local gets updated with changes made in remote. local 
 can now be pushed to remote with most recent local changes.
 
 "merge alt pull request" merges the alt branch and the master branch on GitHub.
+
+pull requests and conflicts: must be resolved in the command line. pull updates of master
+on GitHub to local repository. this will pull any new branches or changes to the local
+repository that have been pushed to the repository on GitHub since the last time an update
+was performed locally. from here, any conflicts can be dealt with locally/manually, before
+a merge between a branch and the master occurs. the change is added and committed before
+being pushed to the repository on GitHub. this updates the pull request to account for the 
+new changes and the resolution to the conflict as a new commit. from here, a merge between
+the commit that contains all the fixes and the master branch on GitHub can occur. 
